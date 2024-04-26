@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pg connect</title>
+  <link rel="stylesheet" href="project.css" />
+  <style>
+@media only screen and (max-width: 768px) {
+  .header-container {
+    padding: 10px;
+  }
+  .user-button {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .info-box {
+    margin: 10px;
+  }
+}
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header-container {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .heading1 {
+      animation: flip-in-hor-bottom 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    .student-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .user-options {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .user-button {
+      display: block;
+      width: 80%;
+      max-width: 200px;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .info {
+      padding: 20px;
+    }
+
+    .info-box {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .author-info {
+      font-size: 14px;
+      color: #666;
+    }
+
+    @keyframes flip-in-hor-bottom {
+      0% {
+        transform: perspective(400px) rotateY(90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+      }
+
+      40% {
+        transform: perspective(400px) rotateY(-20deg);
+        animation-timing-function: ease-in;
+      }
+
+      60% {
+        transform: perspective(400px) rotateY(10deg);
+        opacity: 1;
+      }
+
+      80% {
+        transform: perspective(400px) rotateY(-5deg);
+      }
+
+      100% {
+        transform: perspective(400px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+    
+      <h1 class="heading1">PG Portal</h1>
+    </div>
+  </header>
+
+  <nav>
+   
+  </nav>
+  <section class="user-options">
+   
+    <div class="options">
+      <button class="user-button" onclick="window.location.href = 'owner.html'">ADD PG HERE</button>
+      <button class="user-button" onclick="window.location.href = 'student.html'">FIND PG HERE</button>
+      
+    </div>
+    
+  </section>
+  <main>
+
+    <section class="info">
+      <h2>Why Choose Us?</h2>
+      <div class="info-box">
+        <h3>Convenient Locations</h3>
+        <p>Our listings are located near major universities and colleges.</p>
+      </div>
+      <div class="info-box">
+        <h3>Affordable Prices</h3>
+        <p>We offer competitive rental rates suitable for student budgets.</p>
+      </div>
+      <div class="info-box">
+        <h3>Flexible Lease Terms</h3>
+        <p>
+          Choose from short-term or long-term leases according to your needs.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 pg connect. All rights reserved.
+      <span class="author-info">Pg connect 2024 All right reserved</span>
+    </p>
+  </footer>
+</body>
+</html>

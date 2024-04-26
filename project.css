@@ -1,0 +1,324 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightskyblue;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hero {
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animated-heading {
+  animation: bounceIn 1s ease-in-out forwards;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.35, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+  80% {
+    transform: translateY(-1px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header-container {
+  display: flex;  /* Enables flexbox layout */
+  align-items: center;  /* Aligns content vertically */
+}
+
+.student-image {
+  margin-right: 20px;  /* Add some space between image and heading */
+}
+.hero {
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hero {
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+const image = document.getElementById("rotatableImage");
+let currentAngle = 0;
+
+image.addEventListener("click", () => {
+  currentAngle += 360; // Add 360 degrees on each click
+  image.style.transform = `rotate(${currentAngle}deg)`;
+});
+
+@keyframes rotateImage {
+from {
+  transform: rotate(0deg); 
+}
+to {
+  transform: rotate(360deg); 
+}
+}
+
+#rot{
+animation: rotateImage 5s linear infinite; 
+}
+   
+.user-options {
+text-align: center;
+margin: 2rem 0; 
+}
+
+.user-button {
+background-color: #4CAF50; 
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin: 0 10px; 
+transition: all 0.3s ease-in-out; 
+}
+
+.user-button:hover {
+background-color: #3e8e41; 
+transform: scale(1.05); 
+/* project.css */
+
+.student-image {
+/* Existing styles... */
+}
+
+h1 {
+animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(5deg); 
+}
+}
+
+  .header-container {
+    max-width: 100%; /* Ensure it doesn't overflow */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center; /* Center align the content */
+  }
+  
+  .student-image {
+    max-width: 100%; /* Make sure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust font size as needed */
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .header-container {
+      padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+      font-size: 1.2em; /* Reduce font size for smaller screens */
+    }
+  }
+
+
+<div class="header-container">
+  <img src="student.jpeg" alt="Student studying" class="student-image" id="rotatableImage" />
+  <h1>PG Connect</h1>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pg connect</title>
+  <link rel="stylesheet" href="project.css" />
+  <style>
+    /* Define colors */
+    :root {
+      --primary-color: #f7931b;  /* Orange */
+      --secondary-color: #daeefc; /* Light blue */
+    }
+
+    @media only screen and (max-width: 768px) {
+      .header-container {
+        padding: 10px;
+      }
+      .user-button {
+        width: 100%;
+        margin: 5px auto;
+      }
+      .info-box {
+        margin: 10px;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px; /* Increase base font size */
+    }
+
+    header {
+      background-image: url("path/to/your/hero.jpg"); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      height: 300px; /* Adjust height as needed */
+    }
+
+    .header-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .student-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .user-options {
+      text-align: center;
+      padding: 40px 0; /* Add top and bottom padding */
+    }
+
+    .user-button {
+      display: block;
+      width: 80%;
+      max-width: 200px;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease; /* Hover effect */
+    }
+
+  
+    .info {
+      padding: 20px;
+    }
+
+    .info-box {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+    } 
+    .heading1 {
+
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
