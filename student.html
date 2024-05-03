@@ -403,10 +403,10 @@
         const selectedCity = document.getElementById("citySelect").value;
         const pgResultsDiv = document.getElementById("pg-results");
 
-        // Filter PGs based on selected city
+   
         const filteredPGs = pgData.filter(pg => pg.city === selectedCity);
 
-        // Clear previous results
+  
         pgResultsDiv.innerHTML = "";
 
         if (filteredPGs.length === 0) {
@@ -414,9 +414,8 @@
             return;
         }
 
-        // Create and append results to pgResultsDiv
         const ul = document.createElement("ul");
-        ul.classList.add("scrollable"); // Add this line to add the .scrollable class
+        ul.classList.add("scrollable"); 
 
         let count = 0;
 
